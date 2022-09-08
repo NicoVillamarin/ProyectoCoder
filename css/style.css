@@ -1,0 +1,726 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+/* Globales */
+h1, h2, h3{
+    font-family: 'Rubik Dirt', cursive;
+    color: #E6F5FF;
+}
+p{
+    font-family: 'Righteous', cursive;
+    color: #E6F5FF;
+    text-shadow: 1px 1px #1E5F74;
+}
+a{
+    color: #FCDAB7;
+}
+.container{
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    grid-template-rows: 2fr 3fr 1fr;
+    grid-template-areas: 
+    "header header header"
+    "main main main"
+    "footer footer footer"
+    ;
+}
+/*                                      PAGINA INDEX                        */
+
+
+/* HEADER */
+
+header{
+    height: auto;
+    background-image: url(../img/estadio.jpg);
+    background-size: cover;
+
+    display: flex;
+    grid-area: header;
+    flex-direction: column;
+}
+.logo{
+    display: flex;
+    width: 150px;
+    margin-left: 30px;
+    padding-top: 100px;
+}
+.titlPrinc{
+    display: flex;
+    text-align: left;
+    justify-content: left;
+    font-size: 60px;
+    padding-top: 10px;
+    margin-left: 50px;
+}
+.navbar{
+    display: flex;
+    justify-content: right;
+    position: relative;
+    text-align: right;
+    top: 150px;
+}
+.navbar ul{
+    list-style-type: none;
+}
+.navbar ul li{
+    display: inline-block;
+    margin: 20px;
+    transition: all 1s;
+}
+.navbar li a{
+    text-decoration: none;
+    font-size: 1.05rem;
+    color: #E6F5FF;
+    transition: all 1s;
+}
+.navbar li:hover{
+    transform: scale(1.1);
+}
+.navbar li a:hover{
+    color: #834C69;
+}
+/* TERMINA HEADER */
+
+/* TERMINA MAIN */
+main{
+    height: auto;
+    padding-top: 50px ;
+    background-color: #33313B;
+    
+    display: flex;
+    grid-area: main;
+    flex-direction: column;
+}
+
+.img-principal{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+button{
+    display: block;
+    margin: 50px auto;
+    text-align: center;
+    background-color: #1E5F74;
+    color: #FCDAB7;
+    width: 100px;
+    height: 40px;
+    border-radius: 10px;
+    border: 2px solid transparent;
+}
+button:hover{
+    background-color: #1D2D50;
+    color: #FCF9F9;
+}
+
+/* COMIENZA LOS PASOS A SEGUIR */
+
+h2{
+    margin-left: 30px;
+    font-size: 40px;
+}
+.pasoUnoTres{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    height: 300px;
+    text-align: left;
+    margin: 20px auto auto auto;
+}
+.imgNumeros{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100px;
+    margin: 50px;
+}
+
+.textoDePasoUno{
+    display:flex;
+    width: 340px;
+}
+
+.pasoDos{
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 10px auto;
+    text-align: left;
+}
+
+/* COMIENZA EL FOOTER */
+footer{
+    background-image: linear-gradient(to bottom, #33313b, #42394b, #554058, #6b4662, #834c69);
+    display: flex;
+    grid-area: footer;
+    flex-direction: column;
+    align-items: center;
+}
+
+.logoFooter{
+    display: block;
+    margin: auto;
+    padding-top: 10px;
+    width: 110px;
+}
+.bloqueIconos{
+    display: block;
+    text-align: center;
+}
+.icoRedes{
+    width: 40px;
+    margin: 20px;
+}
+
+
+/*                                      TERMINA INDEX                        */
+
+/*                                      HEADER DE LAS PAGINAS SECUNDARIAS                        */
+.mainTienda{
+    background-color: #33313B;
+}
+.headerStore{
+    width: 100%;
+    background-image: url(../img/pexels-gonzalo-acuña-10923063.jpg);
+    background-size: cover;
+    background-position-x: 50%;
+    background-position-y: 50%;
+}
+.subtit{
+    position: relative;
+    top: 100px;
+    text-align: center;
+}
+
+/*                                    TERMINA HEADER DE LAS PAGINAS SECUNDARIAS                        */
+
+
+/*                                      PAGINA TIENDA                      */
+
+/* COMIENZA MAIN Y LAS TARJETAS */
+
+.bloqueGeneral{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto;
+}
+.bloqueClubes{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+    margin: 20px;
+    border: 1px #7CBD1E transparent;
+    border-radius: 15px;
+    background-color: #E6F5FF;
+    box-shadow: 1px 1px 20px #834C69;
+}
+.escudos{
+    display: flex;
+    align-items: center;
+    width: 110px;
+    height: 110px;
+    margin: 10px auto;
+}
+.nombreClub{
+    color: #33313B;
+    text-align: center;
+}
+.description{
+    color: #33313B;
+    text-shadow: none;
+    font-size: 0.8rem;
+    margin: 10px;
+}
+
+.botoneraCompra li{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+
+    color: #E6F5FF;
+    height: 22px;
+    width: 100px;
+    background-color: #33313B;
+    border: 1px #7CBD1E transparent;
+    border-radius: 10px;
+    margin: 5px;
+    text-align: center;
+    transition: all 1s;
+}
+.botoneraCompra  a{
+    text-decoration: none;
+}
+.botoneraCompra li:hover{
+    background-color: #E6F5FF;
+    color: #33313B;
+}
+/* TERMINA MAIN Y LAS TARJETAS */
+
+
+/*                                     TERMINBA PAGINA TIENDA                   */
+
+/*                                     COMIENZA PAGINA  GAME                  */
+
+.tituloGame{
+    margin: 80px;
+}
+.bloqueGameUno{
+    display: flex;
+    align-items: center;
+    width: 90%;
+    margin: auto;
+    padding-bottom: 50px;
+}
+.parrafoGameUno{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 50px;
+}
+.imageGameUno{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+.imgGame{
+    width: 350px;
+    border-radius: 100px 0 100px 0;
+    box-shadow: 1px 1px 20px #834C69;
+}
+/*                                     TERMINBA PAGINA GAME                    */
+
+/*                                     COMIENZA PAGINA CONTACTO                    */
+
+.blockForm{
+    margin: 20px auto auto auto;
+    padding-bottom: 30px;
+    width: 60%;
+}
+fieldset{
+    border: 2px #1E5F74 solid;
+    border-radius: 10px;
+}
+legend{
+    color: #FCF9F9;
+    font-size: 20px;
+    font-family: 'Righteous', cursive;
+}
+.bloqueArribaFormulario{
+    width: 100%;
+    margin: 10px auto;
+    text-align: center;
+}
+label{
+    color: #FCF9F9;
+    margin: 50px;
+    font-size: 15px;
+    font-family: 'Righteous', cursive;
+}
+input{
+    text-align: left;
+    width: 50%;
+}
+select{
+    margin: 30px;
+}
+textarea{
+    margin: 30px;
+}
+.bloqueboton{
+    display: flex;
+    justify-content: center;
+    margin: 20px auto;
+}
+.boton{
+    text-align: center;
+    background-color: #1E5F74;
+    width: 100px;
+    height: 30px;
+    border: 1px #133B5C transparent;
+    border-radius: 10px;
+}
+.boton:hover{
+    background-color: #133B5C;
+    color: #FCF9F9;
+}
+
+/*                                     TERMINA PAGINA CONTACTO                    */
+
+
+/*                                     COMIENZA PAGINA NOTICAS                    */
+.titNoticias{
+    font-size: 1rem;
+    margin: 50px;
+}
+.titNoticias h2{
+    color: #FCF9F9;
+}
+.bloqueNoticias{
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #5e416460;
+    border-radius: 10px;
+}
+.bloqueNoticiasDos{
+    display: flex;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 10px;
+    background-color: #93596d52;
+    border-radius: 10px;
+}
+.imgNoticias{
+    width: 150px;
+    border-radius: 100%;
+    margin-right: 20px;
+}
+.subbloqueNoticas{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.listNoticias{
+    display: block;
+    padding-top: 40px;
+}
+.listNoticias h3{
+    color: #FCF9F9;
+}
+.botonNoticias{
+    margin-top: 10px;
+    padding: 0;
+}
+/*                                     TERMINA PAGINA NOTICAS                    */
+
+/*            COMIENZAN LAS MEDIAS QUERIES               */
+
+
+
+@media screen and (min-width: 768px){
+
+    /*    globales media queries   */
+    .container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+        gap: 10px;
+        background-color: #33313B;
+    }
+
+    /*    index media queries   */
+    /* HEADER */
+    .logo{
+        width: 110px;
+        padding-top: 50px;
+    }
+    .titlPrinc{
+        margin-left: 30px;
+        margin-bottom: 60px;
+    }
+    .navbar{
+        top: 50px;
+    }
+    .navbar ul li{
+        margin: 10px;
+    }
+    .navbar li a{
+        font-size: 1rem;
+    }
+    
+        /* TERMINA HEADER */
+        
+        /* COMIENZA MAIN */
+
+    button{
+        margin: 30px auto;
+    }
+
+    /* COMIENZA LOS PASOS A SEGUIR */
+
+    .pasoUnoTres{
+        height: 200px;
+        margin: 20px;
+    }
+    .imgNumeros{
+        width: 80px;
+        margin: 30px;
+    }
+    
+
+    /*                                      HEADER DE LAS PAGINAS SECUNDARIAS                        */
+    .headerStore{
+        background-image: url(../img/pexels-gonzalo-acuña-10923063.jpg);
+        background-position-x: -50%;
+        background-position-y: 60%;
+        background-size: cover;
+    }
+    .subtit{
+        position: relative;
+        top: 10px;
+        text-align: center;
+    }
+    
+    /*                                     COMIENZA PAGINA TIENDA                   */
+    /*                         EL STYLE DE TIENDA ESTA BIEN ARMADA!                 */
+
+    /*                                     COMIENZA PAGINA  GAME                  */
+
+    .tituloGame{
+        margin: 65px;
+    }
+    .bloqueGameUno{
+        padding-bottom: 50px;
+    }
+    .parrafoGameUno{
+        margin: auto 30px;
+    }
+    /*                                     TERMINA PAGINA GAME                    */
+
+    /*                                     COMIENZA PAGINA CONTACTO                    */
+    
+    /*  La pagina se ve bien en el responsive   */
+    
+    /*                                     TERMINA PAGINA CONTACTO                    */
+
+    /*                                     COMIENZA PAGINA NOTICAS                    */
+    .titNoticias{
+        margin: 0 auto 50px auto;
+    }
+    .bloqueNoticias{
+        width: 80%;
+    }
+    .bloqueNoticiasDos{
+        width: 80%;
+    }
+    /*                                     TERMINA PAGINA NOTICAS                    */
+}
+
+/*                         COMIENZA MEDIA QUERIES PARA CELULARES         */
+
+@media screen and (min-width: 320px) and (max-width: 767px) {
+    /*    globales media queries   */
+    .container{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+        gap: 10px;
+        background-color: #33313B;
+    }
+
+    /*    index media queries   */
+    /* HEADER */
+    header{
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+    .logo{
+        width: 90px;
+        padding-top: 10px;
+    }
+    .titlPrinc{
+        margin-left: 30px;
+        margin-bottom: 60px;
+        font-size: 2.6rem;
+    }
+    .navbar{
+        top: 50px;
+    }
+    .navbar ul li{
+        
+        margin: 10px;
+        display: flex;
+        flex-direction: row;
+    }
+    .navbar li a{
+        color: #133B5C;
+        font-weight: bolder;
+    }
+    
+        /* TERMINA HEADER */
+        
+        /* COMIENZA MAIN */
+
+    /* COMIENZA LOS PASOS A SEGUIR */
+
+    .pasoUnoTres{
+        height: 300px;
+        margin: 10px;
+    }
+    .imgNumeros{
+        width: 80px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    .pasoDos{
+        display: block;
+        margin: 10px auto;
+    }
+    .textoDePasoUno{
+        width: auto;
+        margin: auto 10px;
+    }
+    /*                                      HEADER DE LAS PAGINAS SECUNDARIAS                        */
+    .headerStore{
+        background-size: cover;
+        background-position-x: 50%;
+        background-position-y: 50%;
+    }
+    .subtit{
+        position: relative;
+        top: 10px;
+        text-align: center;
+    }
+        
+    /*                                     COMIENZA PAGINA TIENDA                   */
+    /*                         EL STYLE DE TIENDA ESTA BIEN ARMADA!                 */
+    
+
+    /*                                     COMIENZA PAGINA  GAME                  */
+    
+    .tituloGame{
+        margin: 30px;
+    }
+    .bloqueGameUno{
+        display:block;
+        width: 95%;
+        margin: auto;
+        padding-bottom: 50px;
+    }
+    .parrafoGameUno{
+        width: 90%;
+        display: block;
+        margin: 10px auto;
+    }
+    .imageGameUno{
+        width: auto;
+        display: block;
+        text-align: center;
+    }
+    .imgGame{
+        width: 250px;
+    }
+
+    /*                                     TERMINA PAGINA GAME                    */
+
+    /*                                     COMIENZA PAGINA CONTACTO                    */
+    .blockForm{
+        margin: auto;
+        padding-bottom: 30px;
+        width: 95%;
+    }
+    fieldset{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+    }
+    legend{
+        font-size: 1rem;
+    }
+    .bloqueArribaFormulario{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: 100%;
+        margin: 5px auto;
+    }
+    label{
+        color: #FCF9F9;
+        margin: 5px;
+        font-size: 15px;
+        font-family: 'Righteous', cursive;
+    }
+    input{
+        display: flex;
+        flex-direction: column;
+        margin-left: auto;
+        margin-right: auto;
+        width: 65%;
+    }
+    select{
+        width: 65%;
+        margin-left: auto;
+        margin-right: auto;
+    }
+    textarea{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        flex-wrap: nowrap;
+        margin: 0;
+        width: 100%;
+    }
+    .bloqueboton{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        text-align: center;
+        margin: 20px auto;
+    }
+    .boton{
+        align-items: center;
+        justify-content: center;
+    }
+    
+    /*                                     TERMINA PAGINA CONTACTO                    */
+
+    /*                                     COMIENZA PAGINA NOTICAS                    */
+    .titNoticias{
+        margin: 10px;
+    }
+    .bloqueNoticias{
+        width: 95%;
+    }
+    .bloqueNoticiasDos{
+        width: 95%;
+    }
+    .imgNoticias{
+        display: flex;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 10px;
+    }
+    .subbloqueNoticas{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    /*                                     TERMINA PAGINA NOTICAS                    */
+
+}
+    
+    
+    

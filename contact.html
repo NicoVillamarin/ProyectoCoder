@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!--Links de Google Fonts-->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Black+Ops+One&family=Righteous&family=Rubik+Dirt&display=swap" rel="stylesheet">
+
+    <!--Termina el link de google-->
+
+    <link rel="shortcut icon" href="./img/Soccer_icon-icons.com_67819.ico" type="image/x-icon">
+    <link rel="stylesheet" href="./css/style.css">
+    <title>|| Token de Primera</title>
+</head>
+<body>
+    <div class="container">
+        <header class="headerStore">
+            <h2 class="subtit">Contactanos</h2>
+            <nav class="navbar">
+                <ul>
+                    <li><a href="./index.html">Inicio</a></li>
+                    <li><a href="./game.html">¿Como jugar?</a></li>
+                    <li><a href="./new.html">Noticias</a></li>
+                    <li><a href="./store.html">Tienda</a></li>
+                </ul>
+            </nav>
+            <img class="logo" src="./img/logo_small.png" alt="Logo">
+            <h1 class="titlPrinc">Token <br> de <br> Primera</h1>
+        </header>
+        <main class="mainTienda">
+            <form class="blockForm">
+                <fieldset>
+                    <legend>Envianos tu consulta</legend>
+                    <br>
+                    <div class="bloqueArribaFormulario">
+                        <label for="nombre">Nombre:</label>
+                        <br>
+                        <input type="text" name="nombre" placeholder="Nombre.." required>
+                        <br>
+                        <label for="email">Email</label>
+                        <br>
+                        <input type="email" name="email" placeholder="Email..." required>
+                    </div>
+                    <br>
+                    <div class="bloqueArribaFormulario">
+                        <label for="lista">Tipo de consulta</label>
+                        <br>
+                        <select name="lista">
+                            <option value="l">Problema con el juego</option>
+                            <option value="s">Problema con la wallet</option>
+                            <option value="m">Consulta por TdP</option>
+                            <option value="e">Otro</option>
+                        </select>
+                        <br>
+                        <label for="consulta">Escribe tu comentario:</label>
+                        <br>
+                        <textarea name="consulta" id="#" cols="60" rows="10">Agrega tu Comentario</textarea>
+                    </div>
+                    <br>
+                    <div class="bloqueboton">
+                        <input class="boton" type="submit" value="Enviar">
+                    </div>
+                </fieldset>
+            </form>
+        </main>
+        <footer>
+            <img class="logoFooter" src="./img/logo_small.png" alt="Logo pie de pagina">
+            <div>
+                <div class="bloqueIconos">
+                    <a href="#"><img class="icoRedes" src="./img/instagram.png" alt="Logo instagram"></a>
+                    <a href="#"><img class="icoRedes" src="./img/facebook.png" alt="Logo facebook"></a>
+                    <a href="#"><img class="icoRedes" src="./img/discord.png" alt="Logo discord"></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+</body>
+</html>
