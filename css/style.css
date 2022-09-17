@@ -16,7 +16,7 @@ p{
 a{
     color: #FCDAB7;
 }
-.container{
+.containerPropio{
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 2fr 3fr 1fr;
@@ -25,6 +25,9 @@ a{
     "main main main"
     "footer footer footer"
     ;
+}
+.botonesPagina{
+    width: 100px;
 }
 /*                                      PAGINA INDEX                        */
 
@@ -49,29 +52,8 @@ img.logo{
     padding-top: 50px;
     padding-bottom: 150px;
 }
-.navbar{
-    display: flex;
-    justify-content: right;
-    position: relative;
-    text-align: right;
-    top: 150px;
-}
-.navbar ul{
-    list-style-type: none;
-}
-.navbar ul li{
-    display: inline-block;
-    margin: 20px;
-    transition: all 1s;
-}
-.navbar li a{
-    text-decoration: none;
-    font-size: 1.05rem;
-    color: #f7df1f;
-    transition: all 1s;
-}
-.navbar li:hover{
-    transform: scale(1.1);
+.colorNavegador a{
+    color: rgb(252, 217, 18);
 }
 
 /* TERMINA HEADER */
@@ -91,21 +73,6 @@ main{
     display: block;
     margin-left: auto;
     margin-right: auto;
-}
-button{
-    display: block;
-    margin: 50px auto;
-    text-align: center;
-    background-color: #1E5F74;
-    color: #FCDAB7;
-    width: 100px;
-    height: 40px;
-    border-radius: 10px;
-    border: 2px solid transparent;
-}
-button:hover{
-    background-color: #1D2D50;
-    color: #FCF9F9;
 }
 
 /* COMIENZA LOS PASOS A SEGUIR */
@@ -211,6 +178,7 @@ footer{
     justify-content: center;
     align-items: center;
 
+    width: 250px;
     margin: 20px;
     border: 1px #7CBD1E transparent;
     border-radius: 15px;
@@ -233,31 +201,6 @@ footer{
     text-shadow: none;
     font-size: 0.8rem;
     margin: 10px;
-}
-
-.botoneraCompra li{
-    display: inline-flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: row;
-    flex-wrap: nowrap;
-
-    color: #E6F5FF;
-    height: 22px;
-    width: 100px;
-    background-color: #33313B;
-    border: 1px #7CBD1E transparent;
-    border-radius: 10px;
-    margin: 5px;
-    text-align: center;
-    transition: all 1s;
-}
-.botoneraCompra  a{
-    text-decoration: none;
-}
-.botoneraCompra li:hover{
-    background-color: #E6F5FF;
-    color: #33313B;
 }
 /* TERMINA MAIN Y LAS TARJETAS */
 
@@ -300,28 +243,10 @@ footer{
 
 /*                                     COMIENZA PAGINA CONTACTO                    */
 
-.blockForm{
-    margin: 20px auto auto auto;
-    padding-bottom: 30px;
-    width: 60%;
-}
-fieldset{
-    border: 2px #1E5F74 solid;
-    border-radius: 10px;
-}
-legend{
-    color: #FCF9F9;
-    font-size: 20px;
-    font-family: 'Righteous', cursive;
-}
-.bloqueArribaFormulario{
-    width: 100%;
-    margin: 10px auto;
-    text-align: center;
-}
+
 label{
     color: #FCF9F9;
-    margin: 50px;
+    margin: 20px;
     font-size: 15px;
     font-family: 'Righteous', cursive;
 }
@@ -329,30 +254,6 @@ input{
     text-align: left;
     width: 50%;
 }
-select{
-    margin: 30px;
-}
-textarea{
-    margin: 30px;
-}
-.bloqueboton{
-    display: flex;
-    justify-content: center;
-    margin: 20px auto;
-}
-.boton{
-    text-align: center;
-    background-color: #1E5F74;
-    width: 100px;
-    height: 30px;
-    border: 1px #133B5C transparent;
-    border-radius: 10px;
-}
-.boton:hover{
-    background-color: #133B5C;
-    color: #FCF9F9;
-}
-
 /*                                     TERMINA PAGINA CONTACTO                    */
 
 
@@ -399,10 +300,6 @@ textarea{
 .listNoticias h3{
     color: #FCF9F9;
 }
-.botonNoticias{
-    margin-top: 10px;
-    padding: 0;
-}
 /*                                     TERMINA PAGINA NOTICAS                    */
 
 /*            COMIENZAN LAS MEDIAS QUERIES               */
@@ -412,7 +309,7 @@ textarea{
 @media screen and (min-width: 768px) and (max-width: 1030px){
 
     /*    globales media queries   */
-    .container{
+    .containerPropio{
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 1fr;
@@ -433,30 +330,17 @@ textarea{
     }
     /* HEADER */
     .logo{
+        position: relative;
         width: 110px;
-        padding-top: 50px;
+        padding-top: 150px;
     }
     .titlPrinc{
         margin-left: 30px;
         margin-bottom: 60px;
     }
-    .navbar{
-        top: 50px;
-    }
-    .navbar ul li{
-        margin: 10px;
-    }
-    .navbar li a{
-        font-size: 1rem;
-    }
-    
-        /* TERMINA HEADER */
         
-        /* COMIENZA MAIN */
+    /* TERMINA HEADER */
 
-    button{
-        margin: 30px auto;
-    }
 
     /* COMIENZA LOS PASOS A SEGUIR */
 
@@ -522,7 +406,7 @@ textarea{
 
 @media screen and (min-width: 320px) and (max-width: 767px) {
     /*    globales media queries   */
-    .container{
+    .containerPropio{
         display: grid;
         width: 100%;
         grid-template-columns: 1fr 1fr;
@@ -543,26 +427,12 @@ textarea{
         background-position-y: 50%;
     }
     img.logo{
-        width: 90%;
+        width: 80%;
         align-items: center;
         justify-content: center;
-        padding: 80px 0 0 0;
-        margin: 0 auto;
+        padding: 0;
+        margin: 100px auto;
     }
-    .navbar{
-        top: 50px;
-    }
-    .navbar ul li{
-        
-        margin: 10px;
-        display: flex;
-        flex-direction: row;
-    }
-    .navbar li a{
-        color: #133B5C;
-        font-weight: bolder;
-    }
-    
         /* TERMINA HEADER */
         
         /* COMIENZA MAIN */
@@ -631,64 +501,6 @@ textarea{
     /*                                     TERMINA PAGINA GAME                    */
 
     /*                                     COMIENZA PAGINA CONTACTO                    */
-    .blockForm{
-        margin: auto;
-        padding-bottom: 30px;
-        width: 95%;
-    }
-    fieldset{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-    }
-    legend{
-        font-size: 1rem;
-    }
-    .bloqueArribaFormulario{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        width: 100%;
-        margin: 5px auto;
-    }
-    label{
-        color: #FCF9F9;
-        margin: 5px;
-        font-size: 15px;
-        font-family: 'Righteous', cursive;
-    }
-    input{
-        display: flex;
-        flex-direction: column;
-        margin-left: auto;
-        margin-right: auto;
-        width: 65%;
-    }
-    select{
-        width: 65%;
-        margin-left: auto;
-        margin-right: auto;
-    }
-    textarea{
-        display: flex;
-        justify-content: center;
-        flex-direction: column;
-        flex-wrap: nowrap;
-        margin: 0;
-        width: 100%;
-    }
-    .bloqueboton{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        text-align: center;
-        margin: 20px auto;
-    }
-    .boton{
-        align-items: center;
-        justify-content: center;
-    }
-    
     /*                                     TERMINA PAGINA CONTACTO                    */
 
     /*                                     COMIENZA PAGINA NOTICAS                    */

@@ -15,24 +15,46 @@
     <!--Link de animaciones-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!--Link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 
     <link rel="shortcut icon" href="./img/Soccer_icon-icons.com_67819.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <title>|| Token de Primera</title>
 </head>
 <body>
-    <div class="container">
-        <header class="headerStore">
+    <div class="containerPropio">
+        <header class="headerStore" id="arriba" >
             <h2 class="subtit">Tienda</h2>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./game.html">¿Como jugar?</a></li>
-                    <li><a href="./new.html">Noticias</a></li>
-                    <li><a href="./contact.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg pt-5 text-end">
+                <div class="container-fluid d-flex flex-row-reverse">
+                    <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav colorNavegador">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./game.html">¿Como jugar?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./new.html">Noticias</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./contact.html">Contacto</a>
+                        </li>
+                    </div>
+                    </ul>
+                </div>
             </nav>
             <img class="logo" src="./img/LogoNuevo.png" alt="Logo" data-aos="fade-down" data-aos-duration="1500">
+            <div class="position-fixed bottom-0 end-0 m-5">
+                <a class="btn btn-warning rounded-pill" href="#arriba" role="button">☝</a>
+            </div>
+
         </header>
     <main class="mainTienda">
         <section>
@@ -45,10 +67,11 @@
                         <br>
                         ⚽ Ingreso: 0.45 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/boca.png" alt="boca">
@@ -58,10 +81,11 @@
                         <br>
                         ⚽ Ingreso: 0.80 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/independiente.png" alt="independiente">
@@ -71,10 +95,11 @@
                         <br>
                         ⚽ Ingreso: 0.45 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/river.png" alt="River">
@@ -84,10 +109,11 @@
                         <br>
                         ⚽ Ingreso: 0.85 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/colon.png" alt="colon">
@@ -97,10 +123,11 @@
                         <br>
                         ⚽ Ingreso: 0.35 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/rosarioCentral.png" alt="Rosario Central">
@@ -110,10 +137,11 @@
                         <br>
                         ⚽ Ingreso: 0.33 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/sanLorenzo.png" alt="San Lorenzo">
@@ -123,10 +151,11 @@
                         <br>
                         ⚽ Ingreso: 0.40 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/huracan.png" alt="huracan">
@@ -136,10 +165,11 @@
                         <br>
                         ⚽ Ingreso: 0.37 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/argentinosJr.png" alt="Argentino Jr">
@@ -149,10 +179,11 @@
                         <br>
                         ⚽ Ingreso: 0.36 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/atleticoTuc.png" alt="Atletico Tucuman">
@@ -162,10 +193,11 @@
                         <br>
                         ⚽ Ingreso: 0.36 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/defensayj.png" alt="Defensa y Justicia">
@@ -175,10 +207,11 @@
                         <br>
                         ⚽ Ingreso: 0.30 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/estudiantes.png" alt="Estudiantes">
@@ -188,10 +221,12 @@
                         <br>
                         ⚽ Ingreso: 0.55 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                                    <!-- Button trigger modal -->
+                    <div class="d-flex justify-content-center m-2">
+                        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                        </button>
+                    </div>
                 </div>
                 <div class="bloqueClubes" data-aos="flip-down" data-aos-duration="1500">
                     <img class="escudos" src="./img/escudos/gimnasiaLp.png" alt="Gimnasia de la Plata">
@@ -201,12 +236,31 @@
                         <br>
                         ⚽ Ingreso: 0.53 TDP
                     </p>
-                    <ul class="botoneraCompra">
-                        <a href="#"><li>info</li></a>
-                        <a href="#"><li>¡Comprar!</li></a>
-                    </ul>
+                <!-- Button trigger modal -->
+                <div class="d-flex justify-content-center m-2">
+                    <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        Comprar
+                    </button>
                 </div>
             </div>
+            <!-- Modal -->
+            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="exampleModalLabel">Antes de jugar</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Antes de poder empezar a jugar, deberias registrarte o entrar a su cuenta!
+                        </div>
+                        <div class="modal-footer justify-content-around">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                            <button type="button" class="btn btn-warning">Registrarse</button>
+                            <button type="button" class="btn btn-warning">Inicio seccion</button>
+                        </div>
+                    </div>
+                </div>
             <!--Segundo bloque de clubes-->
             
         </section>
@@ -227,5 +281,8 @@
     <script>
         AOS.init();
     </script>
+    
+    <!--Js de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>

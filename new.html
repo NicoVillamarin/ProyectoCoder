@@ -15,24 +15,47 @@
     <!--Link de animaciones-->
     <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
+    <!--Link de bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-iYQeCzEYFbKjA/T2uDLTpkwGzCiq6soy8tYaI1GyVh/UjpbCx/TYkiZhlZB6+fzT" crossorigin="anonymous">
+
 
     <link rel="shortcut icon" href="./img/Soccer_icon-icons.com_67819.ico" type="image/x-icon">
     <link rel="stylesheet" href="./css/style.css">
     <title>|| Token de Primera</title>
 </head>
 <body>
-    <div class="container">
-        <header class="headerStore header">
+    <div class="containerPropio">
+        <header class="headerStore" id="arriba" >
             <h2 class="subtit">Noticias</h2>
-            <nav class="navbar">
-                <ul>
-                    <li><a href="./index.html">Inicio</a></li>
-                    <li><a href="./game.html">¿Como jugar?</a></li>
-                    <li><a href="./store.html">Tienda</a></li>
-                    <li><a href="./contact.html">Contacto</a></li>
-                </ul>
+            <nav class="navbar navbar-expand-lg pt-5 text-end">
+                <div class="container-fluid d-flex flex-row-reverse">
+                    <button class="navbar-toggler bg-warning" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                    <ul class="navbar-nav colorNavegador">
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./index.html">Inicio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./game.html">¿Como jugar?</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./store.html">Tienda</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link fw-bold" href="./contact.html">Contacto</a>
+                        </li>
+                    </div>
+                    </ul>
+                </div>
             </nav>
             <img class="logo" src="./img/LogoNuevo.png" alt="Logo" data-aos="fade-down" data-aos-duration="1500">
+
+            <div class="position-fixed bottom-0 end-0 m-5">
+                <a class="btn btn-warning rounded-pill" href="#arriba" role="button">☝</a>
+            </div>
+
     </header>
     <main class="mainTienda main">
         <section>
@@ -45,7 +68,16 @@
                     <div class="listNoticias">
                         <h3>Noticia 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ratione quisquam quos consequuntur sunt, soluta nisi eius dolores unde, rem consequatur at quae expedita excepturi quia debitis quaerat laudantium repellat.</p>
-                        <button class="botonNoticias"><a href="#">Ir</a></button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Opciones
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ver noticia</a></li>
+                                <li><a class="dropdown-item" href="#">Reportar</a></li>
+                                <li><a class="dropdown-item" href="#">Danos tu opinion!</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -55,7 +87,16 @@
                     <div class="listNoticias">
                         <h3>Noticia 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ratione quisquam quos consequuntur sunt, soluta nisi eius dolores unde, rem consequatur at quae expedita excepturi quia debitis quaerat laudantium repellat.</p>
-                        <button class="botonNoticias"><a href="#">Ir</a></button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Opciones
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ver noticia</a></li>
+                                <li><a class="dropdown-item" href="#">Reportar</a></li>
+                                <li><a class="dropdown-item" href="#">Danos tu opinion!</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -65,7 +106,16 @@
                     <div class="listNoticias">
                         <h3>Noticia 1</h3>
                         <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Impedit ratione quisquam quos consequuntur sunt, soluta nisi eius dolores unde, rem consequatur at quae expedita excepturi quia debitis quaerat laudantium repellat.</p>
-                        <button class="botonNoticias"><a href="#">Ir</a></button>
+                        <div class="dropdown">
+                            <button class="btn btn-secondary dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                Opciones
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Ver noticia</a></li>
+                                <li><a class="dropdown-item" href="#">Reportar</a></li>
+                                <li><a class="dropdown-item" href="#">Danos tu opinion!</a></li>
+                            </ul>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -86,5 +136,7 @@
     <script>
         AOS.init();
     </script>
+    <!--Js de bootstrap -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-u1OknCvxWvY5kfmNBILK2hRnQC3Pr17a+RTT6rIHI7NnikvbZlHgTPOOmMi466C8" crossorigin="anonymous"></script>
 </body>
 </html>
