@@ -1,0 +1,233 @@
+
+@media screen and (min-width: 768px) and (max-width: 1030px){
+
+    .containerPropio{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+        gap: 10px;
+        background-color: #33313B;
+
+        /* Pagina principal*/
+
+        header{
+            background-size: cover;
+            background-position-y: 0;
+
+            .logo{
+                position: relative;
+                width: 410px;
+                padding-top: 150px;
+            }
+            .titlPrinc{
+                margin-left: 30px;
+                margin-bottom: 60px;
+            }
+        }
+
+        /* header Pag secundarias */
+
+        .headerStore{
+            background-image: url(../img/pexels-gonzalo-acuña-10923063.jpg);
+            background-position-x: -50%;
+            background-position-y: 60%;
+            background-size: cover;
+
+            .subtit{
+                position: relative;
+                top: 10px;
+                text-align: center;
+            }
+        }
+        main{
+
+            .pasoUnoTres{
+                height: 200px;
+                margin: 20px;
+
+                .imgNumeros{
+                    width: 80px;
+                    margin: 30px;
+                }
+            }
+        }
+
+        /* Main paginas secundarias */
+
+        .mainTienda{
+
+            /* Pagina tienda bien ordenada*/
+
+            /* Pagina game*/
+            .tituloGame{
+                margin: 65px;
+            }
+            .bloqueGameUno{
+                padding-bottom: 50px;
+
+                .parrafoGameUno{
+                    margin: auto 30px;
+                }
+            }
+
+            /* Pagina contacto bien ordenada */
+            
+            /* Pagina noticias*/
+
+            .titNoticias{
+                margin: 0 auto 50px auto;
+            }
+            .bloqueNoticias{
+                width: 80%;
+            }
+            .bloqueNoticiasDos{
+                width: 80%;
+            }
+
+        }
+    }
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 767px){
+
+    .containerPropio{
+        display: grid;
+        width: 100%;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: 
+        "header header"
+        "main main"
+        "footer footer"
+        ;
+        gap: 10px;
+        background-color: #33313B;
+
+            /* Pagina principal*/
+        header{
+            background-position-x: 80%;
+            background-position-y: 50%;
+
+            img.logo{
+                width: 80%;
+                align-items: center;
+                justify-content: center;
+                padding: 0;
+                margin: 100px auto;
+            }
+        }
+        .pasoUnoTres{
+            display: block;
+            height: 300px;
+            margin: 10px;
+
+            .imgNumeros{
+                width: 80px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textoDePasoUno{
+                width: auto;
+                margin: auto 10px;
+            }
+        }
+        .pasoDos{
+            display: block;
+            margin: 10px auto;
+        }
+
+        /* Header paginas secundarias */
+
+        .headerStore{
+            background-size: cover;
+            background-position-x: 50%;
+            background-position-y: 50%;
+
+            .subtit{
+                position: relative;
+                top: 10px;
+                text-align: center;
+            }
+        }
+
+        /* Pagina Tienda esta bien */
+
+        /* Pagina game */
+
+        .tituloGame{
+            margin: 30px;
+        }
+        .bloqueGameUno{
+            display: block;
+            width: 95%;
+            margin: auto;
+            padding-bottom: 50px;
+
+            .parrafoGameUno{
+                width: 90%;
+                display: block;
+                margin: 10px auto;
+            }
+            .imageGameUno{
+                width: auto;
+                display: block;
+                text-align: center;
+
+                .imgGame{
+                    width: 250px;
+                }
+            }
+        }
+
+        /* Pagina contacto esta ok */
+
+        /* Pagina noticias */
+
+        .titNoticias{
+            margin: 10px;
+        }
+        .bloqueNoticias{
+            width: 95%;
+
+            .subbloqueNoticas{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .imgNoticias{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .bloqueNoticiasDos{
+            width: 95%;
+
+            .subbloqueNoticas{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .imgNoticias{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 10px;
+                }
+            }
+        }
+    }
+}

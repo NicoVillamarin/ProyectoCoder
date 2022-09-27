@@ -1,0 +1,355 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Variables Globales*/
+$titulos_Principales: 'Rubik Dirt', cursive;
+$fuente_parrafos: 'Righteous', cursive;
+$color_LetrasClaras: #E6F5FF;
+$color_LetrasLinks: rgb(252, 217, 18);
+
+@import "header";
+@import "footer";
+
+body{
+
+    /* pagina principal */
+    .containerPropio{
+        display: grid;
+        grid-template-columns: 1fr 2fr 1fr;
+        grid-template-rows: 2fr 3fr 1fr;
+        grid-template-areas: 
+        "header header header"
+        "main main main"
+        "footer footer footer"
+        ;
+        
+        main{
+            height: auto;
+            padding-top: 50px ;
+            background-color: #33313B;
+            
+            display: flex;
+            grid-area: main;
+            flex-direction: column;
+
+            section{
+                h2{
+                    font-family: $titulos_Principales;
+                    color: $color_LetrasClaras;
+                    margin-left: 30px;
+                    font-size: 40px;
+                }
+                .pasoUnoTres{
+                    display: flex;
+                    flex-direction: row;
+                    flex-wrap: wrap;
+                    justify-content: right;
+                    align-items: center;
+                    height: 300px;
+                    text-align: left;
+                    margin: 20px auto auto auto;
+
+                    .imgNumeros{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        width: 100px;
+                        margin: 50px;
+                    }
+                    .textoDePasoUno{
+                        font-family: $fuente_parrafos;
+                        color: $color_LetrasClaras;
+                        text-shadow: 1px 1px #1E5F74;
+                        display:flex;
+                        width: 440px;
+                    } 
+                }   
+                .pasoDos{
+                    display: flex;
+                    flex-direction: row;
+                    justify-content: left;
+                    align-items: center;
+                    margin: 10px auto;
+                    text-align: left;
+
+                    .imgNumeros{
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: space-around;
+                        width: 100px;
+                        margin: 50px;
+                    }
+                    .textoDePasoUno{
+                        font-family: $fuente_parrafos;
+                        color: $color_LetrasClaras;
+                        text-shadow: 1px 1px #1E5F74;
+                        display:flex;
+                        width: 440px;
+                    } 
+                }
+            }
+        }
+        .titNoticias{
+            margin: 10px;
+        }
+        .bloqueNoticias{
+            width: 95%;
+
+            .subbloqueNoticas{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .imgNoticias{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 10px;
+                }
+            }
+        }
+        .bloqueNoticiasDos{
+            width: 95%;
+
+            .subbloqueNoticas{
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+
+                .imgNoticias{
+                    display: flex;
+                    justify-content: center;
+                    flex-direction: column;
+                    margin-top: 10px;
+                }
+            }
+        }
+        /* pagina Tienda*/
+
+        .mainTienda{
+            background-color: #33313B;
+
+            .bloqueGeneral{
+                display: flex;
+                justify-content: center;
+                flex-direction: row;
+                flex-wrap: wrap;
+                margin-left: auto;
+                margin-right: auto;
+
+                .bloqueClubes{
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+                
+                    width: 250px;
+                    margin: 20px;
+                    border: 1px #7CBD1E transparent;
+                    border-radius: 15px;
+                    background-color: #E6F5FF;
+                    box-shadow: 1px 1px 20px #834C69;
+
+                    .escudos{
+                        display: flex;
+                        align-items: center;
+                        width: 110px;
+                        height: 110px;
+                        margin: 10px auto;
+                    }
+                    .nombreClub{
+                        font-family: $titulos_Principales;
+                        color: #33313B;
+                        text-align: center;
+                    }
+                    .description{
+                        font-family: $fuente_parrafos;
+                        color: #33313B;
+                        text-shadow: none;
+                        font-size: 0.8rem;
+                        margin: 10px;
+                    }
+                }
+            }
+
+            /* Pagina game*/
+
+            .tituloGame{
+                color: $color_LetrasClaras;
+                font-family: $titulos_Principales;
+                margin: 80px;
+            }
+            .bloqueGameUno{
+                display: flex;
+                align-items: center;
+                width: 90%;
+                margin: auto;
+                padding-bottom: 50px;
+
+                .parrafoGameUno{
+                    color: $color_LetrasClaras;
+                    font-family: $fuente_parrafos;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    margin-right: 50px;
+                }
+                .imageGameUno{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center;
+
+                    .imgGame{
+                        width: 350px;
+                        border-radius: 100px 0 100px 0;
+                        box-shadow: 1px 1px 20px #834C69;
+                    }
+                }
+            }
+            /* Pagina contacto*/
+            form{
+                width: 100%;
+                label{
+                    color: #FCF9F9;
+                    margin: 20px;
+                    font-size: 15px;
+                    font-family: 'Righteous', cursive;
+                }
+                input{
+                    text-align: left;
+                    width: 50%;
+                }
+            }
+
+            /* Pagina noticias */
+            .titNoticias{
+                color: $color_LetrasClaras;
+                font-family: $titulos_Principales;
+                font-size: 1rem;
+                margin: 50px;
+            }
+            .bloqueNoticias{
+                display: flex;
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                background-color: #5e416460;
+                border-radius: 10px;
+
+                .subbloqueNoticas{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .imgNoticias{
+                        width: 150px;
+                        border-radius: 100%;
+                        margin-right: 20px;
+                    }
+                    .listNoticias{
+                        display: block;
+                        padding-top: 40px;
+
+                        h3{
+                            color: $color_LetrasClaras;
+                            font-family: $titulos_Principales;
+                        }
+                        p{
+                            color: $color_LetrasClaras;
+                            font-family: $fuente_parrafos;
+                        }
+                    }
+                }
+            }
+            .bloqueNoticiasDos{
+                display: flex;
+                width: 60%;
+                margin-left: auto;
+                margin-right: auto;
+                padding: 10px;
+                background-color: #93596d52;
+                border-radius: 10px;
+
+                .subbloqueNoticas{
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .imgNoticias{
+                        width: 150px;
+                        border-radius: 100%;
+                        margin-right: 20px;
+                    }
+                    .listNoticias{
+                        display: block;
+                        padding-top: 40px;
+
+                        h3{
+                            color: $color_LetrasClaras;
+                            font-family: $titulos_Principales;
+                        }
+                        p{
+                            color: $color_LetrasClaras;
+                            font-family: $fuente_parrafos;
+                        }
+                    }
+                }
+            }
+            @media screen and (min-width: 320px) and (max-width: 767px){
+                .titNoticias{
+                    margin: 10px;
+                }
+                .bloqueNoticias{
+                    width: 95%;
+        
+                    .subbloqueNoticas{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+        
+                        .imgNoticias{
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+                .bloqueNoticiasDos{
+                    width: 95%;
+        
+                    .subbloqueNoticas{
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+        
+                        .imgNoticias{
+                            display: flex;
+                            justify-content: center;
+                            flex-direction: column;
+                            margin-top: 10px;
+                        }
+                    }
+                }
+            }
+        }
+        
+    }
+    @import "quaries";
+}
+
+
+
+

@@ -1,0 +1,21 @@
+footer{
+    background-image: linear-gradient(to bottom, #33313b, #42394b, #554058, #6b4662, #834c69);
+    display: flex;
+    grid-area: footer;
+    flex-direction: column;
+    align-items: center;
+    .logoFooter{
+        display: block;
+        margin: auto;
+        padding-top: 10px;
+        width: 250px;
+    }
+    .bloqueIconos{
+        display: block;
+        text-align: center;
+        .icoRedes{
+            width: 40px;
+            margin: 20px;
+        }
+    } 
+}
