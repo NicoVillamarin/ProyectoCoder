@@ -1,0 +1,41 @@
+body{
+        main{
+    
+            .tituloGame{
+                color: $color_LetrasClaras;
+                font-family: $titulos_Principales;
+                margin: 80px;
+            }
+            .bloqueGameUno{
+                display: flex;
+                align-items: center;
+                width: 90%;
+                margin: auto;
+                padding-bottom: 50px;
+    
+                .parrafoGameUno{
+                    color: $color_LetrasClaras;
+                    font-family: $fuente_parrafos;
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center;
+                    margin-right: 50px;
+                }
+                .imageGameUno{
+                    width: 50%;
+                    display: flex;
+                    flex-direction: column;
+                    flex-wrap: nowrap;
+                    align-items: center;
+    
+                    .imgGame{
+                        width: 350px;
+                        border-radius: 100px 0 100px 0;
+                        box-shadow: 1px 1px 20px #834C69;
+                    }
+                }
+            }
+        }
+    }

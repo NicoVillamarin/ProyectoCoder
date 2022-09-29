@@ -37,6 +37,143 @@ header {
     top: 100px;
     text-align: center; }
 
+body main .tituloGame {
+  color: #E6F5FF;
+  font-family: "Rubik Dirt", cursive;
+  margin: 80px; }
+
+body main .bloqueGameUno {
+  display: flex;
+  align-items: center;
+  width: 90%;
+  margin: auto;
+  padding-bottom: 50px; }
+  body main .bloqueGameUno .parrafoGameUno {
+    color: #E6F5FF;
+    font-family: "Righteous", cursive;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center;
+    margin-right: 50px; }
+  body main .bloqueGameUno .imageGameUno {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: center; }
+    body main .bloqueGameUno .imageGameUno .imgGame {
+      width: 350px;
+      border-radius: 100px 0 100px 0;
+      box-shadow: 1px 1px 20px #834C69; }
+
+.mainTienda {
+  background-color: #33313B; }
+  .mainTienda .bloqueGeneral {
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: auto;
+    margin-right: auto; }
+    .mainTienda .bloqueGeneral .bloqueClubes {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      width: 250px;
+      margin: 20px;
+      border: 1px #7CBD1E transparent;
+      border-radius: 15px;
+      background-color: #E6F5FF;
+      box-shadow: 1px 1px 20px #834C69; }
+      .mainTienda .bloqueGeneral .bloqueClubes .escudos {
+        display: flex;
+        align-items: center;
+        width: 110px;
+        height: 110px;
+        margin: 10px auto; }
+      .mainTienda .bloqueGeneral .bloqueClubes .nombreClub {
+        font-family: "Rubik Dirt", cursive;
+        color: #33313B;
+        text-align: center; }
+      .mainTienda .bloqueGeneral .bloqueClubes .description {
+        font-family: "Righteous", cursive;
+        color: #33313B;
+        text-shadow: none;
+        font-size: 0.8rem;
+        margin: 10px; }
+
+.titNoticias {
+  color: #E6F5FF;
+  font-family: "Rubik Dirt", cursive;
+  font-size: 1rem;
+  margin: 50px; }
+
+.bloqueNoticias {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #5e416460;
+  border-radius: 10px; }
+  .bloqueNoticias .subbloqueNoticas {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .bloqueNoticias .subbloqueNoticas .imgNoticias {
+      width: 150px;
+      border-radius: 100%;
+      margin-right: 20px; }
+    .bloqueNoticias .subbloqueNoticas .listNoticias {
+      display: block;
+      padding-top: 40px; }
+      .bloqueNoticias .subbloqueNoticas .listNoticias h3 {
+        color: #E6F5FF;
+        font-family: "Rubik Dirt", cursive; }
+      .bloqueNoticias .subbloqueNoticas .listNoticias p {
+        color: #E6F5FF;
+        font-family: "Righteous", cursive; }
+
+.bloqueNoticiasDos {
+  display: flex;
+  width: 60%;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 10px;
+  background-color: #93596d52;
+  border-radius: 10px; }
+  .bloqueNoticiasDos .subbloqueNoticas {
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+    .bloqueNoticiasDos .subbloqueNoticas .imgNoticias {
+      width: 150px;
+      border-radius: 100%;
+      margin-right: 20px; }
+    .bloqueNoticiasDos .subbloqueNoticas .listNoticias {
+      display: block;
+      padding-top: 40px; }
+      .bloqueNoticiasDos .subbloqueNoticas .listNoticias h3 {
+        color: #E6F5FF;
+        font-family: "Rubik Dirt", cursive; }
+      .bloqueNoticiasDos .subbloqueNoticas .listNoticias p {
+        color: #E6F5FF;
+        font-family: "Righteous", cursive; }
+
+form {
+  width: 100%; }
+  form label {
+    color: #FCF9F9;
+    margin: 20px;
+    font-size: 15px;
+    font-family: 'Righteous', cursive; }
+  form input {
+    text-align: left;
+    width: 50%; }
+
 footer {
   background-image: linear-gradient(to bottom, #33313b, #42394b, #554058, #6b4662, #834c69);
   display: flex;
@@ -61,8 +198,7 @@ body {
     display: grid;
     grid-template-columns: 1fr 2fr 1fr;
     grid-template-rows: 2fr 3fr 1fr;
-    grid-template-areas: "header header header" "main main main" "footer footer footer";
-    /* pagina Tienda*/ }
+    grid-template-areas: "header header header" "main main main" "footer footer footer"; }
     body .containerPropio main {
       height: auto;
       padding-top: 50px;
@@ -115,192 +251,6 @@ body {
           text-shadow: 1px 1px #1E5F74;
           display: flex;
           width: 440px; }
-    body .containerPropio .titNoticias {
-      margin: 10px; }
-    body .containerPropio .bloqueNoticias {
-      width: 95%; }
-      body .containerPropio .bloqueNoticias .subbloqueNoticas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-        body .containerPropio .bloqueNoticias .subbloqueNoticas .imgNoticias {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          margin-top: 10px; }
-    body .containerPropio .bloqueNoticiasDos {
-      width: 95%; }
-      body .containerPropio .bloqueNoticiasDos .subbloqueNoticas {
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center; }
-        body .containerPropio .bloqueNoticiasDos .subbloqueNoticas .imgNoticias {
-          display: flex;
-          justify-content: center;
-          flex-direction: column;
-          margin-top: 10px; }
-    body .containerPropio .mainTienda {
-      background-color: #33313B;
-      /* Pagina game*/
-      /* Pagina contacto*/
-      /* Pagina noticias */ }
-      body .containerPropio .mainTienda .bloqueGeneral {
-        display: flex;
-        justify-content: center;
-        flex-direction: row;
-        flex-wrap: wrap;
-        margin-left: auto;
-        margin-right: auto; }
-        body .containerPropio .mainTienda .bloqueGeneral .bloqueClubes {
-          display: flex;
-          flex-direction: column;
-          justify-content: center;
-          align-items: center;
-          width: 250px;
-          margin: 20px;
-          border: 1px #7CBD1E transparent;
-          border-radius: 15px;
-          background-color: #E6F5FF;
-          box-shadow: 1px 1px 20px #834C69; }
-          body .containerPropio .mainTienda .bloqueGeneral .bloqueClubes .escudos {
-            display: flex;
-            align-items: center;
-            width: 110px;
-            height: 110px;
-            margin: 10px auto; }
-          body .containerPropio .mainTienda .bloqueGeneral .bloqueClubes .nombreClub {
-            font-family: "Rubik Dirt", cursive;
-            color: #33313B;
-            text-align: center; }
-          body .containerPropio .mainTienda .bloqueGeneral .bloqueClubes .description {
-            font-family: "Righteous", cursive;
-            color: #33313B;
-            text-shadow: none;
-            font-size: 0.8rem;
-            margin: 10px; }
-      body .containerPropio .mainTienda .tituloGame {
-        color: #E6F5FF;
-        font-family: "Rubik Dirt", cursive;
-        margin: 80px; }
-      body .containerPropio .mainTienda .bloqueGameUno {
-        display: flex;
-        align-items: center;
-        width: 90%;
-        margin: auto;
-        padding-bottom: 50px; }
-        body .containerPropio .mainTienda .bloqueGameUno .parrafoGameUno {
-          color: #E6F5FF;
-          font-family: "Righteous", cursive;
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          align-items: center;
-          margin-right: 50px; }
-        body .containerPropio .mainTienda .bloqueGameUno .imageGameUno {
-          width: 50%;
-          display: flex;
-          flex-direction: column;
-          flex-wrap: nowrap;
-          align-items: center; }
-          body .containerPropio .mainTienda .bloqueGameUno .imageGameUno .imgGame {
-            width: 350px;
-            border-radius: 100px 0 100px 0;
-            box-shadow: 1px 1px 20px #834C69; }
-      body .containerPropio .mainTienda form {
-        width: 100%; }
-        body .containerPropio .mainTienda form label {
-          color: #FCF9F9;
-          margin: 20px;
-          font-size: 15px;
-          font-family: 'Righteous', cursive; }
-        body .containerPropio .mainTienda form input {
-          text-align: left;
-          width: 50%; }
-      body .containerPropio .mainTienda .titNoticias {
-        color: #E6F5FF;
-        font-family: "Rubik Dirt", cursive;
-        font-size: 1rem;
-        margin: 50px; }
-      body .containerPropio .mainTienda .bloqueNoticias {
-        display: flex;
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-        background-color: #5e416460;
-        border-radius: 10px; }
-        body .containerPropio .mainTienda .bloqueNoticias .subbloqueNoticas {
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          body .containerPropio .mainTienda .bloqueNoticias .subbloqueNoticas .imgNoticias {
-            width: 150px;
-            border-radius: 100%;
-            margin-right: 20px; }
-          body .containerPropio .mainTienda .bloqueNoticias .subbloqueNoticas .listNoticias {
-            display: block;
-            padding-top: 40px; }
-            body .containerPropio .mainTienda .bloqueNoticias .subbloqueNoticas .listNoticias h3 {
-              color: #E6F5FF;
-              font-family: "Rubik Dirt", cursive; }
-            body .containerPropio .mainTienda .bloqueNoticias .subbloqueNoticas .listNoticias p {
-              color: #E6F5FF;
-              font-family: "Righteous", cursive; }
-      body .containerPropio .mainTienda .bloqueNoticiasDos {
-        display: flex;
-        width: 60%;
-        margin-left: auto;
-        margin-right: auto;
-        padding: 10px;
-        background-color: #93596d52;
-        border-radius: 10px; }
-        body .containerPropio .mainTienda .bloqueNoticiasDos .subbloqueNoticas {
-          display: flex;
-          justify-content: center;
-          align-items: center; }
-          body .containerPropio .mainTienda .bloqueNoticiasDos .subbloqueNoticas .imgNoticias {
-            width: 150px;
-            border-radius: 100%;
-            margin-right: 20px; }
-          body .containerPropio .mainTienda .bloqueNoticiasDos .subbloqueNoticas .listNoticias {
-            display: block;
-            padding-top: 40px; }
-            body .containerPropio .mainTienda .bloqueNoticiasDos .subbloqueNoticas .listNoticias h3 {
-              color: #E6F5FF;
-              font-family: "Rubik Dirt", cursive; }
-            body .containerPropio .mainTienda .bloqueNoticiasDos .subbloqueNoticas .listNoticias p {
-              color: #E6F5FF;
-              font-family: "Righteous", cursive; }
-      @media screen and (min-width: 320px) and (max-width: 767px) {
-        body .containerPropio .mainTienda .titNoticias {
-          margin: 10px; }
-        body .containerPropio .mainTienda .bloqueNoticias {
-          width: 95%; }
-          body .containerPropio .mainTienda .bloqueNoticias .subbloqueNoticas {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; }
-            body .containerPropio .mainTienda .bloqueNoticias .subbloqueNoticas .imgNoticias {
-              display: flex;
-              justify-content: center;
-              flex-direction: column;
-              margin-top: 10px; }
-        body .containerPropio .mainTienda .bloqueNoticiasDos {
-          width: 95%; }
-          body .containerPropio .mainTienda .bloqueNoticiasDos .subbloqueNoticas {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center; }
-            body .containerPropio .mainTienda .bloqueNoticiasDos .subbloqueNoticas .imgNoticias {
-              display: flex;
-              justify-content: center;
-              flex-direction: column;
-              margin-top: 10px; } }
   @media screen and (min-width: 768px) and (max-width: 1030px) {
     body .containerPropio {
       display: grid;
@@ -444,4 +394,6 @@ body {
             display: flex;
             justify-content: center;
             flex-direction: column;
-            margin-top: 10px; } }
+            margin-top: 10px; }
+      body .containerPropio footer .logoFooter {
+        width: 100px; } }
