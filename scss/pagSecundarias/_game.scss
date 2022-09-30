@@ -7,26 +7,24 @@ body{
                 margin: 80px;
             }
             .bloqueGameUno{
-                display: flex;
+                @include flex-center-row;
                 align-items: center;
                 width: 90%;
                 margin: auto;
                 padding-bottom: 50px;
     
                 .parrafoGameUno{
+                    @include flex-column;
                     color: $color_LetrasClaras;
                     font-family: $fuente_parrafos;
                     width: 50%;
-                    display: flex;
-                    flex-direction: column;
                     flex-wrap: nowrap;
                     align-items: center;
                     margin-right: 50px;
                 }
                 .imageGameUno{
+                    @include flex-column;
                     width: 50%;
-                    display: flex;
-                    flex-direction: column;
                     flex-wrap: nowrap;
                     align-items: center;
     
