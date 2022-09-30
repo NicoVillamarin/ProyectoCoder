@@ -1,0 +1,20 @@
+ En la página Token de Primera (Todas) agregue la siguiente parte de SEO:
+
+*Descripción: mediante la etiqueta meta name description, agregué el siguiente párrafo que explica en pocas palabras el contenido de mi sitio: “¡Estas preparado para jugar en Token De Primera?, el primer juego NTF y con crypto en la cual te vas a divertir y ganar al mismo tiempo!, Si te convencí entra y juga ⚽"
+
+*Palabras clave: mediante la etiqueta meta name keywords, agregué las palabras clave que acompañarán a todas las páginas de mi sitio: "NTF, Fútbol, Futbol Argentino, AFA, Token, Estadísticas, fechas, juegos, diversión".
+
+*Encabezado: Todas las páginas tienen sus encabezados correspondientes, las secundarias con h2 y index.html con h1.
+
+*<title> : Acomode los title de cada pagina poniendo un orden como corresponde de cada una de las paginas.
+
+
+_________________________________________________________________________________________________________________
+
+La parte de Sass, @extend:
+
+    Esta agregada en la pagina tienda!
+
+    @mixin:
+
+    Se agrego en todas las paginas!
