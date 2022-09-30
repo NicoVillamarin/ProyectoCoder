@@ -14,8 +14,7 @@
     border-radius: 10px;
 
     .subbloqueNoticas{
-        display: flex;
-        justify-content: center;
+        @include flex-center-row;
         align-items: center;
 
         .imgNoticias{
@@ -48,8 +47,7 @@
     border-radius: 10px;
 
     .subbloqueNoticas{
-        display: flex;
-        justify-content: center;
+        @include flex-center-row;
         align-items: center;
 
         .imgNoticias{

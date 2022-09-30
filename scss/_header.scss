@@ -4,9 +4,8 @@ header{
     background-size: cover;
     background-position-y: -170px;
 
-    display: flex;
+    @include flex-column;
     grid-area: header;
-    flex-direction: column;
     .colorNavegador a{
         color: $color_LetrasLinks;
     }

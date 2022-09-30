@@ -199,15 +199,13 @@
             width: 95%;
 
             .subbloqueNoticas{
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 justify-content: center;
                 align-items: center;
 
                 .imgNoticias{
-                    display: flex;
+                    @include flex-column;
                     justify-content: center;
-                    flex-direction: column;
                     margin-top: 10px;
                 }
             }
@@ -216,15 +214,13 @@
             width: 95%;
 
             .subbloqueNoticas{
-                display: flex;
-                flex-direction: column;
+                @include flex-column;
                 justify-content: center;
                 align-items: center;
 
                 .imgNoticias{
-                    display: flex;
+                    @include flex-column;
                     justify-content: center;
-                    flex-direction: column;
                     margin-top: 10px;
                 }
             }

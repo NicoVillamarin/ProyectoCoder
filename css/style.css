@@ -11,8 +11,8 @@ header {
   background-size: cover;
   background-position-y: -170px;
   display: flex;
-  grid-area: header;
-  flex-direction: column; }
+  flex-direction: column;
+  grid-area: header; }
   header .colorNavegador a {
     color: #fcd912; }
   header .logo {
@@ -44,23 +44,25 @@ body main .tituloGame {
 
 body main .bloqueGameUno {
   display: flex;
+  justify-content: center;
+  flex-direction: row;
   align-items: center;
   width: 90%;
   margin: auto;
   padding-bottom: 50px; }
   body main .bloqueGameUno .parrafoGameUno {
+    display: flex;
+    flex-direction: column;
     color: #E6F5FF;
     font-family: "Righteous", cursive;
     width: 50%;
-    display: flex;
-    flex-direction: column;
     flex-wrap: nowrap;
     align-items: center;
     margin-right: 50px; }
   body main .bloqueGameUno .imageGameUno {
-    width: 50%;
     display: flex;
     flex-direction: column;
+    width: 50%;
     flex-wrap: nowrap;
     align-items: center; }
     body main .bloqueGameUno .imageGameUno .imgGame {
@@ -77,7 +79,7 @@ body main .bloqueGameUno {
     flex-wrap: wrap;
     margin-left: auto;
     margin-right: auto; }
-    .mainTienda .bloqueGeneral .bloqueClubes {
+    .mainTienda .bloqueGeneral .bloqueClubes, .mainTienda .bloqueGeneral .bloqueClubes--hover:hover {
       display: flex;
       flex-direction: column;
       justify-content: center;
@@ -88,22 +90,24 @@ body main .bloqueGameUno {
       border-radius: 15px;
       background-color: #E6F5FF;
       box-shadow: 1px 1px 20px #834C69; }
-      .mainTienda .bloqueGeneral .bloqueClubes .escudos {
+      .mainTienda .bloqueGeneral .bloqueClubes .escudos, .mainTienda .bloqueGeneral .bloqueClubes--hover:hover .escudos {
         display: flex;
         align-items: center;
         width: 110px;
         height: 110px;
         margin: 10px auto; }
-      .mainTienda .bloqueGeneral .bloqueClubes .nombreClub {
+      .mainTienda .bloqueGeneral .bloqueClubes .nombreClub, .mainTienda .bloqueGeneral .bloqueClubes--hover:hover .nombreClub {
         font-family: "Rubik Dirt", cursive;
         color: #33313B;
         text-align: center; }
-      .mainTienda .bloqueGeneral .bloqueClubes .description {
+      .mainTienda .bloqueGeneral .bloqueClubes .description, .mainTienda .bloqueGeneral .bloqueClubes--hover:hover .description {
         font-family: "Righteous", cursive;
         color: #33313B;
         text-shadow: none;
         font-size: 0.8rem;
         margin: 10px; }
+    .mainTienda .bloqueGeneral .bloqueClubes--hover:hover {
+      transform: scale(1.2); }
 
 .titNoticias {
   color: #E6F5FF;
@@ -122,6 +126,7 @@ body main .bloqueGameUno {
   .bloqueNoticias .subbloqueNoticas {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center; }
     .bloqueNoticias .subbloqueNoticas .imgNoticias {
       width: 150px;
@@ -148,6 +153,7 @@ body main .bloqueGameUno {
   .bloqueNoticiasDos .subbloqueNoticas {
     display: flex;
     justify-content: center;
+    flex-direction: row;
     align-items: center; }
     .bloqueNoticiasDos .subbloqueNoticas .imgNoticias {
       width: 150px;
@@ -175,10 +181,10 @@ form {
     width: 50%; }
 
 footer {
-  background-image: linear-gradient(to bottom, #33313b, #42394b, #554058, #6b4662, #834c69);
   display: flex;
-  grid-area: footer;
   flex-direction: column;
+  background-image: linear-gradient(to bottom, #33313b, #42394b, #554058, #6b4662, #834c69);
+  grid-area: footer;
   align-items: center; }
   footer .logoFooter {
     display: block;
@@ -380,8 +386,8 @@ body {
           align-items: center; }
           body .containerPropio .bloqueNoticias .subbloqueNoticas .imgNoticias {
             display: flex;
-            justify-content: center;
             flex-direction: column;
+            justify-content: center;
             margin-top: 10px; }
       body .containerPropio .bloqueNoticiasDos {
         width: 95%; }
@@ -392,8 +398,8 @@ body {
           align-items: center; }
           body .containerPropio .bloqueNoticiasDos .subbloqueNoticas .imgNoticias {
             display: flex;
-            justify-content: center;
             flex-direction: column;
+            justify-content: center;
             margin-top: 10px; }
       body .containerPropio footer .logoFooter {
         width: 100px; } }
