@@ -26,6 +26,7 @@ header {
 /* Header paginas secundarias*/
 .headerStore {
   width: 100%;
+  height: 600px;
   background-image: url(../img/pexels-gonzalo-acuña-10923063.jpg);
   background-size: cover;
   background-position-x: 50%;
@@ -36,6 +37,59 @@ header {
     position: relative;
     top: 100px;
     text-align: center; }
+
+main {
+  height: auto;
+  padding-top: 50px;
+  background-color: #33313B;
+  display: flex;
+  grid-area: main;
+  flex-direction: column; }
+  main section h2 {
+    font-family: "Rubik Dirt", cursive;
+    color: #E6F5FF;
+    margin-left: 30px;
+    font-size: 40px; }
+  main section .pasoUnoTres {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: right;
+    align-items: center;
+    height: 300px;
+    text-align: left;
+    margin: 20px auto auto auto; }
+    main section .pasoUnoTres .imgNumeros {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100px;
+      margin: 50px; }
+    main section .pasoUnoTres .textoDePasoUno {
+      font-family: "Righteous", cursive;
+      color: #E6F5FF;
+      text-shadow: 1px 1px #1E5F74;
+      display: flex;
+      width: 440px; }
+  main section .pasoDos {
+    display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
+    margin: 10px auto;
+    text-align: left; }
+    main section .pasoDos .imgNumeros {
+      display: flex;
+      flex-direction: row;
+      justify-content: space-around;
+      width: 100px;
+      margin: 50px; }
+    main section .pasoDos .textoDePasoUno {
+      font-family: "Righteous", cursive;
+      color: #E6F5FF;
+      text-shadow: 1px 1px #1E5F74;
+      display: flex;
+      width: 440px; }
 
 body main .tituloGame {
   color: #E6F5FF;
@@ -202,61 +256,9 @@ body {
   /* pagina principal */ }
   body .containerPropio {
     display: grid;
-    grid-template-columns: 1fr 2fr 1fr;
-    grid-template-rows: 2fr 3fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 3fr 1fr;
     grid-template-areas: "header header header" "main main main" "footer footer footer"; }
-    body .containerPropio main {
-      height: auto;
-      padding-top: 50px;
-      background-color: #33313B;
-      display: flex;
-      grid-area: main;
-      flex-direction: column; }
-      body .containerPropio main section h2 {
-        font-family: "Rubik Dirt", cursive;
-        color: #E6F5FF;
-        margin-left: 30px;
-        font-size: 40px; }
-      body .containerPropio main section .pasoUnoTres {
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        justify-content: right;
-        align-items: center;
-        height: 300px;
-        text-align: left;
-        margin: 20px auto auto auto; }
-        body .containerPropio main section .pasoUnoTres .imgNumeros {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          width: 100px;
-          margin: 50px; }
-        body .containerPropio main section .pasoUnoTres .textoDePasoUno {
-          font-family: "Righteous", cursive;
-          color: #E6F5FF;
-          text-shadow: 1px 1px #1E5F74;
-          display: flex;
-          width: 440px; }
-      body .containerPropio main section .pasoDos {
-        display: flex;
-        flex-direction: row;
-        justify-content: left;
-        align-items: center;
-        margin: 10px auto;
-        text-align: left; }
-        body .containerPropio main section .pasoDos .imgNumeros {
-          display: flex;
-          flex-direction: row;
-          justify-content: space-around;
-          width: 100px;
-          margin: 50px; }
-        body .containerPropio main section .pasoDos .textoDePasoUno {
-          font-family: "Righteous", cursive;
-          color: #E6F5FF;
-          text-shadow: 1px 1px #1E5F74;
-          display: flex;
-          width: 440px; }
   @media screen and (min-width: 768px) and (max-width: 1030px) {
     body .containerPropio {
       display: grid;
@@ -271,7 +273,8 @@ body {
       /* Main paginas secundarias */ }
       body .containerPropio header {
         background-size: cover;
-        background-position-y: 0; }
+        background-position-y: 0;
+        padding-bottom: 20px; }
         body .containerPropio header .logo {
           position: relative;
           width: 410px;
@@ -328,7 +331,8 @@ body {
       /* Pagina noticias */ }
       body .containerPropio header {
         background-position-x: 80%;
-        background-position-y: 50%; }
+        background-position-y: 50%;
+        padding-bottom: 20px; }
         body .containerPropio header img.logo {
           width: 80%;
           align-items: center;
@@ -349,7 +353,16 @@ body {
           margin: auto 10px; }
       body .containerPropio .pasoDos {
         display: block;
-        margin: 10px auto; }
+        height: 300px;
+        margin: 10px; }
+        body .containerPropio .pasoDos .imgNumeros {
+          width: 80px;
+          display: block;
+          margin-left: auto;
+          margin-right: auto; }
+        body .containerPropio .pasoDos .textoDePasoUno {
+          width: auto;
+          margin: auto 10px; }
       body .containerPropio .headerStore {
         background-size: cover;
         background-position-x: 50%;

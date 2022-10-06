@@ -19,7 +19,8 @@
         header{
             background-size: cover;
             background-position-y: 0;
-
+            padding-bottom: 20px; 
+            
             .logo{
                 position: relative;
                 width: 410px;
@@ -115,6 +116,7 @@
         header{
             background-position-x: 80%;
             background-position-y: 50%;
+            padding-bottom: 20px;
 
             img.logo{
                 width: 80%;
@@ -142,7 +144,19 @@
         }
         .pasoDos{
             display: block;
-            margin: 10px auto;
+            height: 300px;
+            margin: 10px;
+
+            .imgNumeros{
+                width: 80px;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+            .textoDePasoUno{
+                width: auto;
+                margin: auto 10px;
+            }
         }
 
         /* Header paginas secundarias */
