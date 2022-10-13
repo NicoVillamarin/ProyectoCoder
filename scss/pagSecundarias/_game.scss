@@ -4,7 +4,7 @@ body{
             .tituloGame{
                 color: $color_LetrasClaras;
                 font-family: $titulos_Principales;
-                margin: 80px;
+                margin: 40px;
             }
             .bloqueGameUno{
                 @include flex-center-row;
@@ -19,7 +19,6 @@ body{
                     font-family: $fuente_parrafos;
                     width: 50%;
                     flex-wrap: nowrap;
-                    align-items: center;
                     margin-right: 50px;
                 }
                 .imageGameUno{
@@ -33,6 +32,23 @@ body{
                         border-radius: 100px 0 100px 0;
                         box-shadow: 1px 1px 20px #834C69;
                     }
+                }
+            }
+            h2{
+                padding-top: 30px;
+                text-align: center;
+                color: $color_LetrasClaras;
+                font-family: $titulos_Principales;
+            }
+            .bloque_metodosPagos{
+                @include flex-center-row;
+                margin: 40px auto;
+
+                .mercadolibre{
+                    width: 100px;
+                }
+                .metamask{
+                    width: 200px;
                 }
             }
         }

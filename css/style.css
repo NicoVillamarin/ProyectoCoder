@@ -10,6 +10,7 @@ header {
   background-image: url(../img/fondoPelota.jpg);
   background-size: cover;
   background-position-y: -170px;
+  padding-bottom: 30px;
   display: flex;
   flex-direction: column;
   grid-area: header; }
@@ -26,8 +27,8 @@ header {
 /* Header paginas secundarias*/
 .headerStore {
   width: 100%;
-  height: 600px;
-  background-image: url(../img/pexels-gonzalo-acuña-10923063.jpg);
+  height: 750px;
+  background-image: url(../img/pexels-gonzalo-acuña-10923063-min.jpg);
   background-size: cover;
   background-position-x: 50%;
   background-position-y: 50%; }
@@ -43,58 +44,72 @@ main {
   padding-top: 50px;
   background-color: #33313B;
   display: flex;
-  grid-area: main;
-  flex-direction: column; }
-  main section h2 {
+  flex-direction: column;
+  grid-area: main; }
+  main section h1 {
     font-family: "Rubik Dirt", cursive;
     color: #E6F5FF;
-    margin-left: 30px;
+    margin-left: auto;
+    text-align: center;
     font-size: 40px; }
   main section .pasoUnoTres {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    flex-wrap: wrap;
-    justify-content: right;
+    flex-wrap: nowrap;
     align-items: center;
-    height: 300px;
+    height: auto;
     text-align: left;
-    margin: 20px auto auto auto; }
+    margin: 15px auto auto auto; }
     main section .pasoUnoTres .imgNumeros {
       display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100px;
-      margin: 50px; }
+      justify-content: center;
+      border-radius: 100%;
+      width: 250px;
+      height: 250px;
+      margin: auto; }
     main section .pasoUnoTres .textoDePasoUno {
       font-family: "Righteous", cursive;
       color: #E6F5FF;
       text-shadow: 1px 1px #1E5F74;
       display: flex;
+      margin: auto;
       width: 440px; }
-  main section .pasoDos {
+  main section .tit_staff {
+    font-family: "Rubik Dirt", cursive;
+    color: #E6F5FF;
+    margin: 70px auto;
+    text-align: center;
+    font-size: 35px; }
+  main section .bloque-grupo {
     display: flex;
+    justify-content: center;
     flex-direction: row;
-    justify-content: left;
-    align-items: center;
-    margin: 10px auto;
-    text-align: left; }
-    main section .pasoDos .imgNumeros {
-      display: flex;
-      flex-direction: row;
-      justify-content: space-around;
-      width: 100px;
-      margin: 50px; }
-    main section .pasoDos .textoDePasoUno {
-      font-family: "Righteous", cursive;
-      color: #E6F5FF;
-      text-shadow: 1px 1px #1E5F74;
-      display: flex;
-      width: 440px; }
+    padding-top: 50px; }
+    main section .bloque-grupo .tarjet_group {
+      background-color: #834C69;
+      width: 250px;
+      margin: 10px auto;
+      border-radius: 20px;
+      box-shadow: 1px 1px 20px #E6F5FF; }
+      main section .bloque-grupo .tarjet_group .foto_perfil {
+        display: flex;
+        width: 95%;
+        margin: 10px auto;
+        border-radius: 20px; }
+      main section .bloque-grupo .tarjet_group h2 {
+        font-family: "Rubik Dirt", cursive;
+        color: #E6F5FF;
+        text-align: center; }
+      main section .bloque-grupo .tarjet_group p {
+        font-family: "Righteous", cursive;
+        color: #E6F5FF;
+        text-align: center; }
 
 body main .tituloGame {
   color: #E6F5FF;
   font-family: "Rubik Dirt", cursive;
-  margin: 80px; }
+  margin: 40px; }
 
 body main .bloqueGameUno {
   display: flex;
@@ -111,7 +126,6 @@ body main .bloqueGameUno {
     font-family: "Righteous", cursive;
     width: 50%;
     flex-wrap: nowrap;
-    align-items: center;
     margin-right: 50px; }
   body main .bloqueGameUno .imageGameUno {
     display: flex;
@@ -123,6 +137,22 @@ body main .bloqueGameUno {
       width: 350px;
       border-radius: 100px 0 100px 0;
       box-shadow: 1px 1px 20px #834C69; }
+
+body main h2 {
+  padding-top: 30px;
+  text-align: center;
+  color: #E6F5FF;
+  font-family: "Rubik Dirt", cursive; }
+
+body main .bloque_metodosPagos {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  margin: 40px auto; }
+  body main .bloque_metodosPagos .mercadolibre {
+    width: 100px; }
+  body main .bloque_metodosPagos .metamask {
+    width: 200px; }
 
 .mainTienda {
   background-color: #33313B; }
@@ -224,7 +254,7 @@ body main .bloqueGameUno {
         font-family: "Righteous", cursive; }
 
 form {
-  width: 100%; }
+  width: 60%; }
   form label {
     color: #FCF9F9;
     margin: 20px;
@@ -239,15 +269,25 @@ footer {
   flex-direction: column;
   background-image: linear-gradient(to bottom, #33313b, #42394b, #554058, #6b4662, #834c69);
   grid-area: footer;
-  align-items: center; }
-  footer .logoFooter {
-    display: block;
-    margin: auto;
-    padding-top: 10px;
-    width: 250px; }
+  align-items: center;
+  padding-top: 50px; }
+  footer .bloque_logos {
+    display: flex;
+    justify-content: center;
+    flex-direction: row; }
+    footer .bloque_logos .logoFooterAFA {
+      width: 130px;
+      padding-right: 30px;
+      border-right: 3px #E6F5FF solid;
+      margin: auto; }
+    footer .bloque_logos .logoFooter {
+      width: 130px;
+      padding-left: 30px;
+      margin: auto; }
   footer .bloqueIconos {
-    display: block;
-    text-align: center; }
+    display: flex;
+    justify-content: center;
+    flex-direction: row; }
     footer .bloqueIconos .icoRedes {
       width: 40px;
       margin: 20px; }
@@ -257,7 +297,7 @@ body {
   body .containerPropio {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
-    grid-template-rows: 1fr 3fr 1fr;
+    grid-template-rows: 1fr 2fr;
     grid-template-areas: "header header header" "main main main" "footer footer footer"; }
   @media screen and (min-width: 768px) and (max-width: 1030px) {
     body .containerPropio {
@@ -283,7 +323,7 @@ body {
           margin-left: 30px;
           margin-bottom: 60px; }
       body .containerPropio .headerStore {
-        background-image: url(../img/pexels-gonzalo-acuña-10923063.jpg);
+        background-image: url(../img/pexels-gonzalo-acuña-10923063-min.jpg);
         background-position-x: -50%;
         background-position-y: 60%;
         background-size: cover; }
@@ -294,9 +334,13 @@ body {
       body .containerPropio main .pasoUnoTres {
         height: 200px;
         margin: 20px; }
-        body .containerPropio main .pasoUnoTres .imgNumeros {
-          width: 80px;
-          margin: 30px; }
+      body .containerPropio main .tit_staff {
+        padding-top: 100px; }
+      body .containerPropio main .bloque-grupo {
+        flex-wrap: wrap;
+        padding-top: 50px; }
+        body .containerPropio main .bloque-grupo .tarjet_group {
+          margin: 20px; }
       body .containerPropio .mainTienda {
         /* Pagina tienda bien ordenada*/
         /* Pagina game*/
@@ -340,29 +384,19 @@ body {
           padding: 0;
           margin: 100px auto; }
       body .containerPropio .pasoUnoTres {
-        display: block;
-        height: 300px;
-        margin: 10px; }
-        body .containerPropio .pasoUnoTres .imgNumeros {
-          width: 80px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto; }
+        display: flex;
+        flex-direction: column;
+        height: auto; }
         body .containerPropio .pasoUnoTres .textoDePasoUno {
-          width: auto;
-          margin: auto 10px; }
-      body .containerPropio .pasoDos {
-        display: block;
-        height: 300px;
-        margin: 10px; }
-        body .containerPropio .pasoDos .imgNumeros {
-          width: 80px;
-          display: block;
-          margin-left: auto;
-          margin-right: auto; }
-        body .containerPropio .pasoDos .textoDePasoUno {
-          width: auto;
-          margin: auto 10px; }
+          margin: 10px;
+          width: auto; }
+      body .containerPropio .tit_staff {
+        padding-top: 100px; }
+      body .containerPropio .bloque-grupo {
+        flex-wrap: wrap;
+        padding-top: 50px; }
+        body .containerPropio .bloque-grupo .tarjet_group {
+          margin: 20px; }
       body .containerPropio .headerStore {
         background-size: cover;
         background-position-x: 50%;
