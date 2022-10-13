@@ -35,7 +35,7 @@
         /* header Pag secundarias */
 
         .headerStore{
-            background-image: url(../img/pexels-gonzalo-acuña-10923063.jpg);
+            background-image: url(../img/pexels-gonzalo-acuña-10923063-min.jpg);
             background-position-x: -50%;
             background-position-y: 60%;
             background-size: cover;
@@ -50,13 +50,20 @@
 
             .pasoUnoTres{
                 height: 200px;
-                margin: 20px;
+                margin: 20px; 
+            }  
+            .tit_staff{
 
-                .imgNumeros{
-                    width: 80px;
-                    margin: 30px;
-                }
+                padding-top: 100px;
             }
+            .bloque-grupo{
+                flex-wrap: wrap;
+                padding-top: 50px;
+    
+                .tarjet_group{
+                    margin: 20px;
+                }
+            } 
         }
 
         /* Main paginas secundarias */
@@ -127,35 +134,24 @@
             }
         }
         .pasoUnoTres{
-            display: block;
-            height: 300px;
-            margin: 10px;
-
-            .imgNumeros{
-                width: 80px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
+            @include flex-column;
+            height: auto;
+        
             .textoDePasoUno{
+                margin: 10px;
                 width: auto;
-                margin: auto 10px;
-            }
+            } 
+        }  
+        .tit_staff{
+
+            padding-top: 100px;
         }
-        .pasoDos{
-            display: block;
-            height: 300px;
-            margin: 10px;
+        .bloque-grupo{
+            flex-wrap: wrap;
+            padding-top: 50px;
 
-            .imgNumeros{
-                width: 80px;
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-            }
-            .textoDePasoUno{
-                width: auto;
-                margin: auto 10px;
+            .tarjet_group{
+                margin: 20px;
             }
         }
 

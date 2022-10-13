@@ -3,15 +3,25 @@ footer{
     background-image: linear-gradient(to bottom, #33313b, #42394b, #554058, #6b4662, #834c69);
     grid-area: footer;
     align-items: center;
-    .logoFooter{
-        display: block;
-        margin: auto;
-        padding-top: 10px;
-        width: 250px;
+    padding-top: 50px;
+
+    .bloque_logos{
+        @include flex-center-row;
+
+        .logoFooterAFA{
+            width: 130px;
+            padding-right: 30px;
+            border-right: 3px #E6F5FF solid;
+            margin: auto;
+        }
+        .logoFooter{
+            width: 130px;
+            padding-left: 30px;
+            margin: auto;
+        }
     }
     .bloqueIconos{
-        display: block;
-        text-align: center;
+        @include flex-center-row;
         .icoRedes{
             width: 40px;
             margin: 20px;
