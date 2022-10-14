@@ -1,0 +1,17 @@
+{
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext",
+        "html"
+    ],
+    "spellright.language": [
+        "es"
+    ],
+    "cSpell.words": [
+        "Actualmente",
+        "juga",
+        "Querés"
+    ],
+    "cSpell.language": "en,es-ES,es"
+}
