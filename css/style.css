@@ -254,7 +254,11 @@ body main .bloque_metodosPagos {
         font-family: "Righteous", cursive; }
 
 form {
-  width: 60%; }
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+  padding-top: 100px;
+  width: 100%; }
   form label {
     color: #FCF9F9;
     margin: 20px;

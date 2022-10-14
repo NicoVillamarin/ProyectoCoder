@@ -1,5 +1,9 @@
 form{
-    width: 60%;
+    
+    @include flex-center-row;
+    padding-top: 100px;
+    width: 100%;
+
     label{
         color: #FCF9F9;
         margin: 20px;
